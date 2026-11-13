@@ -1,0 +1,377 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "F:\\Project_Testing\\KnowledgeAssistant\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F2F2FD07-C32F-408D-9A3B-75469AFB624D}|KnowledgeAssistant.csproj|f:\\project_testing\\knowledgeassistant\\wwwroot\\dashboard.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F2F2FD07-C32F-408D-9A3B-75469AFB624D}|KnowledgeAssistant.csproj|solutionrelative:wwwroot\\dashboard.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2F2FD07-C32F-408D-9A3B-75469AFB624D}|KnowledgeAssistant.csproj|f:\\project_testing\\knowledgeassistant\\wwwroot\\register.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F2F2FD07-C32F-408D-9A3B-75469AFB624D}|KnowledgeAssistant.csproj|solutionrelative:wwwroot\\register.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2F2FD07-C32F-408D-9A3B-75469AFB624D}|KnowledgeAssistant.csproj|f:\\project_testing\\knowledgeassistant\\controllers\\assistantadmincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F2F2FD07-C32F-408D-9A3B-75469AFB624D}|KnowledgeAssistant.csproj|solutionrelative:controllers\\assistantadmincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2F2FD07-C32F-408D-9A3B-75469AFB624D}|KnowledgeAssistant.csproj|f:\\project_testing\\knowledgeassistant\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F2F2FD07-C32F-408D-9A3B-75469AFB624D}|KnowledgeAssistant.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2F2FD07-C32F-408D-9A3B-75469AFB624D}|KnowledgeAssistant.csproj|f:\\project_testing\\knowledgeassistant\\controllers\\askcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F2F2FD07-C32F-408D-9A3B-75469AFB624D}|KnowledgeAssistant.csproj|solutionrelative:controllers\\askcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2F2FD07-C32F-408D-9A3B-75469AFB624D}|KnowledgeAssistant.csproj|f:\\project_testing\\knowledgeassistant\\services\\decisionmodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F2F2FD07-C32F-408D-9A3B-75469AFB624D}|KnowledgeAssistant.csproj|solutionrelative:services\\decisionmodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2F2FD07-C32F-408D-9A3B-75469AFB624D}|KnowledgeAssistant.csproj|f:\\project_testing\\knowledgeassistant\\controllers\\assistantcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F2F2FD07-C32F-408D-9A3B-75469AFB624D}|KnowledgeAssistant.csproj|solutionrelative:controllers\\assistantcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2F2FD07-C32F-408D-9A3B-75469AFB624D}|KnowledgeAssistant.csproj|f:\\project_testing\\knowledgeassistant\\services\\ollamaembeddingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F2F2FD07-C32F-408D-9A3B-75469AFB624D}|KnowledgeAssistant.csproj|solutionrelative:services\\ollamaembeddingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2F2FD07-C32F-408D-9A3B-75469AFB624D}|KnowledgeAssistant.csproj|f:\\project_testing\\knowledgeassistant\\services\\openaiembeddingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F2F2FD07-C32F-408D-9A3B-75469AFB624D}|KnowledgeAssistant.csproj|solutionrelative:services\\openaiembeddingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2F2FD07-C32F-408D-9A3B-75469AFB624D}|KnowledgeAssistant.csproj|f:\\project_testing\\knowledgeassistant\\controllers\\debugcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F2F2FD07-C32F-408D-9A3B-75469AFB624D}|KnowledgeAssistant.csproj|solutionrelative:controllers\\debugcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2F2FD07-C32F-408D-9A3B-75469AFB624D}|KnowledgeAssistant.csproj|f:\\project_testing\\knowledgeassistant\\controllers\\documentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F2F2FD07-C32F-408D-9A3B-75469AFB624D}|KnowledgeAssistant.csproj|solutionrelative:controllers\\documentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2F2FD07-C32F-408D-9A3B-75469AFB624D}|KnowledgeAssistant.csproj|f:\\project_testing\\knowledgeassistant\\services\\retrievalservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F2F2FD07-C32F-408D-9A3B-75469AFB624D}|KnowledgeAssistant.csproj|solutionrelative:services\\retrievalservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2F2FD07-C32F-408D-9A3B-75469AFB624D}|KnowledgeAssistant.csproj|f:\\project_testing\\knowledgeassistant\\.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{F2F2FD07-C32F-408D-9A3B-75469AFB624D}|KnowledgeAssistant.csproj|solutionrelative:.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2F2FD07-C32F-408D-9A3B-75469AFB624D}|KnowledgeAssistant.csproj|f:\\project_testing\\knowledgeassistant\\services\\embeddings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F2F2FD07-C32F-408D-9A3B-75469AFB624D}|KnowledgeAssistant.csproj|solutionrelative:services\\embeddings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2F2FD07-C32F-408D-9A3B-75469AFB624D}|KnowledgeAssistant.csproj|f:\\project_testing\\knowledgeassistant\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{F2F2FD07-C32F-408D-9A3B-75469AFB624D}|KnowledgeAssistant.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2F2FD07-C32F-408D-9A3B-75469AFB624D}|KnowledgeAssistant.csproj|f:\\project_testing\\knowledgeassistant\\services\\pdfservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F2F2FD07-C32F-408D-9A3B-75469AFB624D}|KnowledgeAssistant.csproj|solutionrelative:services\\pdfservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2F2FD07-C32F-408D-9A3B-75469AFB624D}|KnowledgeAssistant.csproj|f:\\project_testing\\knowledgeassistant\\models\\documentdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F2F2FD07-C32F-408D-9A3B-75469AFB624D}|KnowledgeAssistant.csproj|solutionrelative:models\\documentdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2F2FD07-C32F-408D-9A3B-75469AFB624D}|KnowledgeAssistant.csproj|f:\\project_testing\\knowledgeassistant\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F2F2FD07-C32F-408D-9A3B-75469AFB624D}|KnowledgeAssistant.csproj|solutionrelative:data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2F2FD07-C32F-408D-9A3B-75469AFB624D}|KnowledgeAssistant.csproj|f:\\project_testing\\knowledgeassistant\\models\\document.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F2F2FD07-C32F-408D-9A3B-75469AFB624D}|KnowledgeAssistant.csproj|solutionrelative:models\\document.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2F2FD07-C32F-408D-9A3B-75469AFB624D}|KnowledgeAssistant.csproj|f:\\project_testing\\knowledgeassistant\\models\\documentchunk.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F2F2FD07-C32F-408D-9A3B-75469AFB624D}|KnowledgeAssistant.csproj|solutionrelative:models\\documentchunk.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2F2FD07-C32F-408D-9A3B-75469AFB624D}|KnowledgeAssistant.csproj|f:\\project_testing\\knowledgeassistant\\wwwroot\\login.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F2F2FD07-C32F-408D-9A3B-75469AFB624D}|KnowledgeAssistant.csproj|solutionrelative:wwwroot\\login.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 145,
+          "SelectedChildIndex": 7,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1869956712:0:{81164725-9a96-4ece-a4cb-440d8fd285e5}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "F:\\Project_Testing\\KnowledgeAssistant\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "F:\\Project_Testing\\KnowledgeAssistant\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAC4AAAAAAAAAAAArwD0AAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-12T09:40:21.33Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AssistantAdminController.cs",
+              "DocumentMoniker": "F:\\Project_Testing\\KnowledgeAssistant\\Controllers\\AssistantAdminController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AssistantAdminController.cs",
+              "ToolTip": "F:\\Project_Testing\\KnowledgeAssistant\\Controllers\\AssistantAdminController.cs",
+              "RelativeToolTip": "Controllers\\AssistantAdminController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-10T10:13:18.867Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "dashboard.html",
+              "DocumentMoniker": "F:\\Project_Testing\\KnowledgeAssistant\\wwwroot\\dashboard.html",
+              "RelativeDocumentMoniker": "wwwroot\\dashboard.html",
+              "ToolTip": "F:\\Project_Testing\\KnowledgeAssistant\\wwwroot\\dashboard.html",
+              "RelativeToolTip": "wwwroot\\dashboard.html",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAAAUAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2026-11-10T04:58:12.834Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "DecisionModels.cs",
+              "DocumentMoniker": "F:\\Project_Testing\\KnowledgeAssistant\\Services\\DecisionModels.cs",
+              "RelativeDocumentMoniker": "Services\\DecisionModels.cs",
+              "ToolTip": "F:\\Project_Testing\\KnowledgeAssistant\\Services\\DecisionModels.cs",
+              "RelativeToolTip": "Services\\DecisionModels.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-10T10:28:50.116Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AssistantController.cs",
+              "DocumentMoniker": "F:\\Project_Testing\\KnowledgeAssistant\\Controllers\\AssistantController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AssistantController.cs",
+              "ToolTip": "F:\\Project_Testing\\KnowledgeAssistant\\Controllers\\AssistantController.cs",
+              "RelativeToolTip": "Controllers\\AssistantController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-10T10:12:45.175Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "DebugController.cs",
+              "DocumentMoniker": "F:\\Project_Testing\\KnowledgeAssistant\\Controllers\\DebugController.cs",
+              "RelativeDocumentMoniker": "Controllers\\DebugController.cs",
+              "ToolTip": "F:\\Project_Testing\\KnowledgeAssistant\\Controllers\\DebugController.cs",
+              "RelativeToolTip": "Controllers\\DebugController.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAmwCkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-10T06:21:06.8Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "OllamaEmbeddingService.cs",
+              "DocumentMoniker": "F:\\Project_Testing\\KnowledgeAssistant\\Services\\OllamaEmbeddingService.cs",
+              "RelativeDocumentMoniker": "Services\\OllamaEmbeddingService.cs",
+              "ToolTip": "F:\\Project_Testing\\KnowledgeAssistant\\Services\\OllamaEmbeddingService.cs",
+              "RelativeToolTip": "Services\\OllamaEmbeddingService.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAuwDIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-10T07:29:56.857Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "register.html",
+              "DocumentMoniker": "F:\\Project_Testing\\KnowledgeAssistant\\wwwroot\\register.html",
+              "RelativeDocumentMoniker": "wwwroot\\register.html",
+              "ToolTip": "F:\\Project_Testing\\KnowledgeAssistant\\wwwroot\\register.html",
+              "RelativeToolTip": "wwwroot\\register.html",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2026-11-10T04:45:02.494Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AskController.cs",
+              "DocumentMoniker": "F:\\Project_Testing\\KnowledgeAssistant\\Controllers\\AskController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AskController.cs",
+              "ToolTip": "F:\\Project_Testing\\KnowledgeAssistant\\Controllers\\AskController.cs",
+              "RelativeToolTip": "Controllers\\AskController.cs",
+              "ViewState": "AgIAAGMAAAAAAAAAAAAkwH0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-10T10:29:23.361Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "RetrievalService.cs",
+              "DocumentMoniker": "F:\\Project_Testing\\KnowledgeAssistant\\Services\\RetrievalService.cs",
+              "RelativeDocumentMoniker": "Services\\RetrievalService.cs",
+              "ToolTip": "F:\\Project_Testing\\KnowledgeAssistant\\Services\\RetrievalService.cs",
+              "RelativeToolTip": "Services\\RetrievalService.cs",
+              "ViewState": "AgIAAEgAAAAAAAAAAAAAwGkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-10T06:18:20.045Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "OpenAiEmbeddingService.cs",
+              "DocumentMoniker": "F:\\Project_Testing\\KnowledgeAssistant\\Services\\OpenAiEmbeddingService.cs",
+              "RelativeDocumentMoniker": "Services\\OpenAiEmbeddingService.cs",
+              "ToolTip": "F:\\Project_Testing\\KnowledgeAssistant\\Services\\OpenAiEmbeddingService.cs",
+              "RelativeToolTip": "Services\\OpenAiEmbeddingService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAD8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-10T06:17:39.04Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": ".gitignore",
+              "DocumentMoniker": "F:\\Project_Testing\\KnowledgeAssistant\\.gitignore",
+              "RelativeDocumentMoniker": ".gitignore",
+              "ToolTip": "F:\\Project_Testing\\KnowledgeAssistant\\.gitignore",
+              "RelativeToolTip": ".gitignore",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2026-11-10T06:14:48.561Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "DocumentController.cs",
+              "DocumentMoniker": "F:\\Project_Testing\\KnowledgeAssistant\\Controllers\\DocumentController.cs",
+              "RelativeDocumentMoniker": "Controllers\\DocumentController.cs",
+              "ToolTip": "F:\\Project_Testing\\KnowledgeAssistant\\Controllers\\DocumentController.cs",
+              "RelativeToolTip": "Controllers\\DocumentController.cs",
+              "ViewState": "AgIAAHcAAAAAAAAAAAAuwJgAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-10T04:56:30.688Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Embeddings.cs",
+              "DocumentMoniker": "F:\\Project_Testing\\KnowledgeAssistant\\Services\\Embeddings.cs",
+              "RelativeDocumentMoniker": "Services\\Embeddings.cs",
+              "ToolTip": "F:\\Project_Testing\\KnowledgeAssistant\\Services\\Embeddings.cs",
+              "RelativeToolTip": "Services\\Embeddings.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-10T06:17:05.557Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "F:\\Project_Testing\\KnowledgeAssistant\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "F:\\Project_Testing\\KnowledgeAssistant\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-11-10T05:26:21.707Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "PdfService.cs",
+              "DocumentMoniker": "F:\\Project_Testing\\KnowledgeAssistant\\Services\\PdfService.cs",
+              "RelativeDocumentMoniker": "Services\\PdfService.cs",
+              "ToolTip": "F:\\Project_Testing\\KnowledgeAssistant\\Services\\PdfService.cs",
+              "RelativeToolTip": "Services\\PdfService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAHEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-10T04:55:38.724Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "DocumentDtos.cs",
+              "DocumentMoniker": "F:\\Project_Testing\\KnowledgeAssistant\\Models\\DocumentDtos.cs",
+              "RelativeDocumentMoniker": "Models\\DocumentDtos.cs",
+              "ToolTip": "F:\\Project_Testing\\KnowledgeAssistant\\Models\\DocumentDtos.cs",
+              "RelativeToolTip": "Models\\DocumentDtos.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-10T04:54:27.197Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "F:\\Project_Testing\\KnowledgeAssistant\\Data\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "Data\\AppDbContext.cs",
+              "ToolTip": "F:\\Project_Testing\\KnowledgeAssistant\\Data\\AppDbContext.cs",
+              "RelativeToolTip": "Data\\AppDbContext.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAqwBoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-10T04:52:05.327Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Document.cs",
+              "DocumentMoniker": "F:\\Project_Testing\\KnowledgeAssistant\\Models\\Document.cs",
+              "RelativeDocumentMoniker": "Models\\Document.cs",
+              "ToolTip": "F:\\Project_Testing\\KnowledgeAssistant\\Models\\Document.cs",
+              "RelativeToolTip": "Models\\Document.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-10T04:51:41.653Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "DocumentChunk.cs",
+              "DocumentMoniker": "F:\\Project_Testing\\KnowledgeAssistant\\Models\\DocumentChunk.cs",
+              "RelativeDocumentMoniker": "Models\\DocumentChunk.cs",
+              "ToolTip": "F:\\Project_Testing\\KnowledgeAssistant\\Models\\DocumentChunk.cs",
+              "RelativeToolTip": "Models\\DocumentChunk.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-10T04:51:20.876Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "login.html",
+              "DocumentMoniker": "F:\\Project_Testing\\KnowledgeAssistant\\wwwroot\\login.html",
+              "RelativeDocumentMoniker": "wwwroot\\login.html",
+              "ToolTip": "F:\\Project_Testing\\KnowledgeAssistant\\wwwroot\\login.html",
+              "RelativeToolTip": "wwwroot\\login.html",
+              "ViewState": "AgIAACAAAAAAAAAAAADwv0YAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2026-11-10T04:45:35.059Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

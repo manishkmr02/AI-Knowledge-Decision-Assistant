@@ -1,0 +1,241 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard · Knowledge Assistant</title>
+    <link rel="stylesheet" href="/css/site.css" />
+</head>
+<body class="dash-page">
+    <header class="navbar">
+        <div class="container nav-inner">
+            <a href="/" class="brand">📚 Knowledge<span>Assistant</span></a>
+            <div class="nav-links">
+                <span id="orgLabel" class="org-label"></span>
+                <button class="btn btn-outline" id="logoutBtn">Log out</button>
+            </div>
+        </div>
+    </header>
+
+    <main class="container dash-main">
+        <h1>Welcome , </h1>
+        <p class="muted" id="orgMeta"></p>
+
+        <section class="card">
+            <div class="card-head">
+                <div>
+                    <h2>Documents</h2>
+                    <p class="muted small">Up to 10 PDFs · max 20 pages each · max 10 MB each.</p>
+                </div>
+                <div>
+                    <input type="file" id="fileInput" accept=".pdf" hidden />
+                    <button class="btn btn-primary" id="uploadBtn">Upload PDF</button>
+                </div>
+            </div>
+
+            <div id="uploadError" class="form-error" hidden></div>
+            <div id="uploadSuccess" class="form-success" hidden></div>
+
+            <table class="doc-table" id="docTable">
+                <thead>
+                    <tr><th>File</th><th>Pages</th><th>Size</th><th>Uploaded</th><th></th></tr>
+                </thead>
+                <tbody id="docBody">
+                    <tr><td colspan="5" class="muted center">Loading…</td></tr>
+                </tbody>
+            </table>
+            <div class="muted small" id="docCounter"></div>
+        </section>
+
+        <section class="card">
+            <h2>Assistant</h2>
+            <p class="muted small">Share this public link — visitors don't need to log in. Only your documents are used.</p>
+
+            <label class="field-label">Assistant URL</label>
+            <div class="input-row">
+                <input type="text" id="assistantUrl" readonly />
+                <button class="btn btn-outline btn-sm" id="copyUrlBtn">Copy</button>
+                <a class="btn btn-primary btn-sm" id="openChatBtn" target="_blank" rel="noopener">Open</a>
+            </div>
+
+            <label class="field-label">Embed in your website</label>
+            <textarea id="embedCode" rows="5" readonly class="code-box"></textarea>
+            <div class="input-row">
+                <button class="btn btn-outline btn-sm" id="copyEmbedBtn">Copy embed code</button>
+                <button class="btn btn-outline btn-sm" id="regenBtn">Regenerate token</button>
+            </div>
+            <p class="muted small">Regenerating invalidates the previous link immediately.</p>
+        </section>
+        <section class="card">
+            <h2>Usage</h2>
+            <div id="usageStats" class="muted">Loading...</div>
+        </section>
+    </main>
+
+    <script>
+        async function loadUsage() {
+            const res = await fetch('/api/usage', { credentials: 'same-origin' });
+            if (!res.ok) return;
+            const data = await res.json();
+            document.getElementById('usageStats').innerHTML = `
+        Questions Asked: <strong>${data.asked}</strong><br>
+        Answered: <strong>${data.answered}</strong><br>
+        Unanswered: <strong>${data.unanswered}</strong>
+    `;
+        }
+         let me = null;
+
+         (async () => {
+            if (await loadMe()) {
+                loadDocs();
+                loadAssistant();
+            }
+        })();
+
+        async function loadMe() {
+            const res = await fetch('/api/auth/me', { credentials: 'same-origin' });
+            if (res.status === 401) { window.location.href = '/login.html'; return false; }
+            me = await res.json();
+            document.getElementById('orgLabel').textContent = me.organizationName;
+            document.getElementById('orgMeta').textContent = `${me.email}`;
+            return true;
+        }
+
+        async function loadAssistant() {
+            const res = await fetch('/api/assistant/admin/info', { credentials: 'same-origin' });
+            if (!res.ok) return;
+            const data = await res.json();
+            updateAssistantUI(data.assistantToken);
+        }
+
+        function updateAssistantUI(token) {
+            const origin = location.origin;
+            const url = `${origin}/chat.html?t=${token}`;
+            document.getElementById('assistantUrl').value = url;
+            document.getElementById('openChatBtn').href = url;
+
+            const embed =
+                `<iframe
+      src="${url}"
+      width="400"
+      height="600"
+      style="border:1px solid #ddd;border-radius:12px"
+      allow="clipboard-write">
+</iframe>`;
+            document.getElementById('embedCode').value = embed;
+        }
+
+        document.getElementById('copyUrlBtn').addEventListener('click', async () => {
+            await navigator.clipboard.writeText(document.getElementById('assistantUrl').value);
+            flash(document.getElementById('copyUrlBtn'), 'Copied!');
+        });
+
+        document.getElementById('copyEmbedBtn').addEventListener('click', async () => {
+            await navigator.clipboard.writeText(document.getElementById('embedCode').value);
+            flash(document.getElementById('copyEmbedBtn'), 'Copied!');
+        });
+
+        document.getElementById('regenBtn').addEventListener('click', async () => {
+            if (!confirm('Regenerate the assistant token? The old link will stop working immediately.')) return;
+            const res = await fetch('/api/assistant/admin/regenerate', {
+                method: 'POST', credentials: 'same-origin'
+            });
+            if (!res.ok) { alert('Failed to regenerate.'); return; }
+            const data = await res.json();
+            updateAssistantUI(data.assistantToken);
+        });
+
+        function flash(btn, msg) {
+            const orig = btn.textContent;
+            btn.textContent = msg;
+            setTimeout(() => btn.textContent = orig, 1500);
+        }
+
+        async function loadDocs() {
+            const body = document.getElementById('docBody');
+            const res = await fetch('/api/documents', { credentials: 'same-origin' });
+            const data = await res.json();
+            const docs = data.documents || [];
+            document.getElementById('docCounter').textContent =
+                `${docs.length} / ${data.limit} documents used`;
+
+            if (docs.length === 0) {
+                body.innerHTML = '<tr><td colspan="5" class="muted center">No documents yet — upload your first PDF.</td></tr>';
+                return;
+            }
+
+            body.innerHTML = docs.map(d => `
+                    <tr>
+                        <td>📄 ${escapeHtml(d.fileName)}</td>
+                        <td>${d.pageCount}</td>
+                        <td>${fmtBytes(d.sizeBytes)}</td>
+                        <td>${new Date(d.uploadedAt).toLocaleDateString()}</td>
+                        <td><button class="btn btn-outline btn-sm" data-id="${d.id}">Delete</button></td>
+                    </tr>
+                `).join('');
+
+            body.querySelectorAll('button[data-id]').forEach(b => {
+                b.addEventListener('click', () => deleteDoc(+b.dataset.id));
+            });
+        }
+
+        async function deleteDoc(id) {
+            if (!confirm('Delete this document and all its indexed chunks?')) return;
+            const res = await fetch(`/api/documents/${id}`, { method: 'DELETE', credentials: 'same-origin' });
+            if (!res.ok) { alert('Delete failed.'); return; }
+            loadDocs();
+        }
+
+        document.getElementById('uploadBtn').addEventListener('click', () => {
+            document.getElementById('fileInput').click();
+        });
+
+        document.getElementById('fileInput').addEventListener('change', async (e) => {
+            const file = e.target.files[0];
+            if (!file) return;
+            e.target.value = '';
+
+            const err = document.getElementById('uploadError');
+            const ok = document.getElementById('uploadSuccess');
+            err.hidden = true; ok.hidden = true;
+
+            const form = new FormData();
+            form.append('file', file);
+
+            const btn = document.getElementById('uploadBtn');
+            btn.disabled = true; btn.textContent = 'Uploading…';
+
+            try {
+                const res = await fetch('/api/documents/upload', {
+                    method: 'POST', body: form, credentials: 'same-origin'
+                });
+                const data = await res.json().catch(() => ({}));
+                if (!res.ok) throw new Error(data.error || 'Upload failed.');
+                ok.textContent = data.message || 'Uploaded.';
+                ok.hidden = false;
+                loadDocs();
+            } catch (ex) {
+                err.textContent = ex.message;
+                err.hidden = false;
+            } finally {
+                btn.disabled = false; btn.textContent = 'Upload PDF';
+            }
+        });
+
+        document.getElementById('logoutBtn').addEventListener('click', async () => {
+            await fetch('/api/auth/logout', { method: 'POST', credentials: 'same-origin' });
+            window.location.href = '/login.html';
+        });
+
+        function fmtBytes(b) {
+            if (b < 1024) return b + ' B';
+            if (b < 1024 * 1024) return (b / 1024).toFixed(1) + ' KB';
+            return (b / (1024 * 1024)).toFixed(1) + ' MB';
+        }
+
+        function escapeHtml(s) {
+            return s.replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+        }
+    </script>
+</body>
+</html>

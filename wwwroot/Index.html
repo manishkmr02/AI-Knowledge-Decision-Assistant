@@ -1,0 +1,108 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Knowledge Assistant — Your Docs, Answered</title>
+    <link rel="stylesheet" href="/css/site.css" />
+</head>
+<body>
+    <!-- NAVBAR -->
+    <header class="navbar">
+        <div class="container nav-inner">
+            <a href="/" class="brand">📚 Knowledge<span>Assistant</span></a>
+            <nav class="nav-links">
+                <a href="#features">Features</a>
+                <a href="#how">How it works</a>
+                <a href="/login.html" class="btn btn-ghost">Log in</a>
+                <a href="/register.html" class="btn btn-primary">Get started</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero">
+        <div class="container hero-inner">
+            <div class="hero-text">
+                <span class="pill">Multi-tenant · Grounded in your PDFs</span>
+                <h1>Turn your PDFs into an <span class="accent">AI assistant</span> your visitors can trust.</h1>
+                <p class="sub">
+                    Upload your documents, get a private assistant URL, and embed it anywhere.
+                    Every answer cites the source document and page — nothing invented.
+                </p>
+                <div class="cta-row">
+                    <a href="/register.html" class="btn btn-primary btn-lg">Create free account</a>
+                    <a href="#how" class="btn btn-outline btn-lg">See how it works</a>
+                </div>
+                <p class="micro">No credit card · PDF-only · Your data stays isolated per organization</p>
+            </div>
+
+            <div class="hero-art">
+                <div class="chat-card">
+                    <div class="chat-head">
+                        <span class="dot"></span> Scholarship Assistant
+                    </div>
+                    <div class="msg user">Am I eligible for a merit scholarship? I'm year 2, GPA 3.7, already have a sports scholarship.</div>
+                    <div class="msg bot">
+                        <strong>Not eligible for the merit scholarship.</strong><br />
+                        Merit requires year ≥ 3 and no other scholarship. You're in year 2 and hold a sports scholarship.
+                        <div class="sources">📄 Scholarship_Rules.pdf — Page 4</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section id="features" class="section">
+        <div class="container">
+            <h2>Built for real questions, not just chat</h2>
+            <p class="section-sub">An LLM understands and writes. Structured decision models actually decide.</p>
+            <div class="grid-3">
+                <div class="feature">
+                    <div class="icon">🔒</div>
+                    <h3>Isolated per organization</h3>
+                    <p>Each org has its own knowledge base and assistant token. No cross-tenant leakage, ever.</p>
+                </div>
+                <div class="feature">
+                    <div class="icon">📄</div>
+                    <h3>Grounded answers</h3>
+                    <p>Answers come only from uploaded PDFs, with document + page citations. If it's not there, we say so.</p>
+                </div>
+                <div class="feature">
+                    <div class="icon">🧠</div>
+                    <h3>LLM + System 1 decisions</h3>
+                    <p>Eligibility, policy category, and scoring evaluated as structured decisions — combined into one answer.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- HOW IT WORKS -->
+    <section id="how" class="section alt">
+        <div class="container">
+            <h2>How it works</h2>
+            <div class="steps">
+                <div class="step"><span>1</span><h3>Upload PDFs</h3><p>Up to 10 documents, 20 pages, 10MB each. We extract and index the text.</p></div>
+                <div class="step"><span>2</span><h3>Get your assistant URL</h3><p>A unique, tokenized URL your visitors can use without logging in.</p></div>
+                <div class="step"><span>3</span><h3>Embed anywhere</h3><p>Copy a one-line iframe snippet into any site.</p></div>
+                <div class="step"><span>4</span><h3>Ask & get cited answers</h3><p>Natural-language answers with source references, powered by retrieval + LLM + rules.</p></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA BAND -->
+    <section class="cta-band">
+        <div class="container cta-inner">
+            <h2>Ready to give your docs a voice?</h2>
+            <a href="/register.html" class="btn btn-primary btn-lg">Get started free</a>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">© 2025 Knowledge Assistant · Built with ASP.NET Core</div>
+    </footer>
+
+    <script src="/js/site.js"></script>
+</body>
+</html>
